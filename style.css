@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fadeOut {
+    animation: fadeOut 1s ease-out;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+.anim {
+    width: 400px;
+    height: 250px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        transform: translate(-50%, -300%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translate(-50%, -300%);
+    }
+    50% {
+        transform: translate(-50%, -30%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
